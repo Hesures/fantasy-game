@@ -6,22 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy game</title>
 
-    <!-- STYLES -->
+    <!-- STYLES 
+    font-family: 'Philosopher', sans-serif;
+    font-family: 'Sigmar', cursive;-->
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Sigmar&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <img class="backgroundImg" src="./images/fairy-forest.jpg" alt="fairy forest">
 
+    <div class="flex-container">
+        <button class="parchmentButton">
+            <h2>Tarea del día</h2>
+        </button>
+        <div class="parchment">
+            <div>
+                <p>Recoge agua del arroyo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img class="backgroundImg" src="./images/fairy-forest.jpg" alt="fairy forest">
+    </div>
+    
     <div id="sigueme">
-
+        <div id="mainCharacter">
+            <video autoplay loop muted>
+                <source src="./images/2192208-Mothqueen-Idle.webm" type="video/webm">
+            </video>
+        </div>
     </div>
 
-    <div id="mainCharacter">
-        <video autoplay loop muted>
-            <source src="./images/2192208-Mothqueen-Idle.webm" type="video/webm">
-        </video>
+    <div class="water-drop">
+        <img src="./images/water-drop.png" alt="water drop">
     </div>
+
     
 <!-- SCRITPS -->
     <script src="./scripts/jquery-3.6.4.min.js"></script>

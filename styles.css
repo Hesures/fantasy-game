@@ -2,21 +2,100 @@ body {
     margin: 0;
 }
 
+.backgroundImg {
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: 'Sigmar', cursive;
+}
+
+p {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
+}
+
+/****************************** POINTER ***********************/
+
+/* Problema para hacer clic en objetos debido al mainCharacter,
+debido a que hace clic en el div y no en el objetivo*/
 #mainCharacter {
-    width: 200px;
-    height: 200px;
+    height: 20%;
     position: absolute;
 }
 
 video {
-    width: 100%;
     height: 100%;
-    /* position: absolute;
-    display: block;
-    background-size: cover;
-    overflow: hidden; */
 }
 
-.backgroundImg {
-    width: 100%;
+/****************************** TARGET PARCHMENTS ***********************/
+
+.flex-container {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    margin: 2% 0 0 2%;
+    width: 300px;
+    height: 370px;
 }
+
+.parchment {
+    width: 300px;
+    height: 300px;
+    background-image: url("./images/parchment.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parchment div {
+    text-align: center;
+    padding: 3%;
+}
+
+.parchmentButton {
+    height: 70px;
+    background-image: url("./images/parchment-coiled.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/****************************** THE WATER DROP TARGET ***********************/
+
+.water-drop {
+    display: hide;
+}
+
+
+/****************************** MEDIA ***********************/
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    p {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+    #mainCharacter {
+        width: 10%;
+        height: 10%;
+    }
+    .flex-container {
+        width: 150px;
+        height: 185px;
+    }
+    .parchment {
+        width: 150px;
+        height: 150px;
+    }
+    .parchmentButton {
+        width: 150px;
+        height: 35px;
+    }
+}
+
+/*
+CREAR UN AVISO, POR MENOR A 481PX, INDICAR QUE ESTA APP ES SOLO PARA INTERFACES
+MAYORES, TALES COMO IPADS, TABLETS, LAPTOPS Y DESKTOPS, NO DISPONIBLE PARA
+DISPOSITIVOS MÓVILES, Y HACER DESAPARECER TODO, DEJANDO VER SOLO EL MENSAJE
+*/
