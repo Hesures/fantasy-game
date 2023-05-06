@@ -16,3 +16,6 @@ parchment.hide();
 $(".parchmentButton").on("click", () => {
     parchment.slideToggle("medium");
 })
+
+
+
